@@ -17,3 +17,11 @@ resource "aws_subnet" "mtc_public_subnet" {
     Name = "dev-public"
   }
 }
+
+resource "aws_internet_gateway" "mtc_internet_gateway" {
+  vpc_id = aws_vpc.mtc_vpc.id
+
+  tags = {
+    Name = "dev_igw"
+  }
+}
