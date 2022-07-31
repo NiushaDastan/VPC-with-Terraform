@@ -1,9 +1,7 @@
-add-content -path c:/users/a/.ssh/config -value @'
+add-content -path c:/users/derek/.ssh/config -value @'
 
 Host ${hostname}
   HostName ${hostname}
   User ${user}
   IdentityFile ${identityfile}
 '@
-Footer
-© 2022 GitHub, Inc.
